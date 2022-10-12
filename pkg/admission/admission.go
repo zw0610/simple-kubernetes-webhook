@@ -79,7 +79,6 @@ func (a Admitter) Pod() (*corev1.Pod, error) {
 	return &p, nil
 }
 
-// reviewResponse TODO: godoc
 func reviewResponse(uid types.UID, allowed bool, httpCode int32,
 	reason string) *admissionv1.AdmissionReview {
 	return &admissionv1.AdmissionReview{
